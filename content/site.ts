@@ -71,16 +71,16 @@ export const site: Site = {
   ],
 
   youtube: [
-    "https://www.youtube.com/watch?v=REPLACE_ME",
-    "https://www.youtube.com/watch?v=REPLACE_ME",
+    "https://youtu.be/0jCuoZEDyWA?si=A1HFyqYTwpeBAvJ6",
+    "https://youtu.be/981iCRn0reI?si=hxqNE4XWmOCwjnOdE",
   ],
 
   socials: {
-    instagram: "https://www.instagram.com/",
-    twitter: "https://twitter.com/",
-    youtube: "https://www.youtube.com/",
-    appleMusic: "https://music.apple.com/",
-    spotify: "https://open.spotify.com/",
+    instagram: "https://www.instagram.com/thisiskarsh",
+    X : "https://x.com/realkarsh",
+    youtube: "https://www.youtube.com/channel/UCzudK-pViwmXgo6UpklnpPA",
+    appleMusic: "https://music.apple.com/ca/artist/karsh/1731261159",
+    spotify: "https://open.spotify.com/artist/3fidvDtvX2WuhSI8l29LQ1?si=iu5a-hdeSaG0oYCi-Muudw",
   },
 
   newsletter: {
