@@ -3,7 +3,7 @@
   --ink: #000;
   --text: #ececea;
   --muted: #8f8f8b;
-  --overlay: rgba(0, 0, 0, 0.35); /* only overlay on the page: keeps text legible */
+  --overlay: rgba(0, 0, 0, 0.35);
 
   --gutter: clamp(1.25rem, 4vw, 3.5rem);
   --space-m: clamp(3rem, 8vw, 7rem);
@@ -29,8 +29,8 @@ html {
 }
 
 body {
- min-height: 100svh;
-  background: transparent;
+  min-height: 100svh;
+  background: var(--ink);
   color: var(--text);
   font-family: var(--sans);
   font-size: 1rem;
@@ -38,7 +38,6 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-
 
 img {
   display: block;
@@ -66,10 +65,10 @@ a {
 
 /* ---------- Background ---------- */
 .backdrop {
- position: fixed;
+  position: fixed;
   inset: 0;
   z-index: 0;
-  background: transparent;
+  background: var(--ink);
   pointer-events: none;
 }
 
@@ -86,7 +85,9 @@ a {
 
 /* ---------- Page frame ---------- */
 .page {
-   min-height: 100svh;
+  position: relative;
+  z-index: 1;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   padding-inline: var(--gutter);
@@ -140,11 +141,13 @@ a {
 .plate-1 {
   aspect-ratio: 4 / 5;
 }
+
 .plate-2 {
   aspect-ratio: 1 / 1;
   width: 72%;
   justify-self: end;
 }
+
 .plate-3 {
   aspect-ratio: 4 / 5;
   width: 88%;
@@ -284,7 +287,7 @@ a {
   background: transparent;
   color: var(--text);
   font: inherit;
-  font-size: 1.125rem; /* 16px+ stops iOS zooming on focus */
+  font-size: 1.125rem;
   appearance: none;
   outline: none;
 }
@@ -340,6 +343,7 @@ a {
     width: auto;
     aspect-ratio: 1 / 1;
   }
+
   .plate-2 {
     grid-column: 9 / span 4;
     grid-row: 1;
@@ -348,6 +352,7 @@ a {
     width: auto;
     aspect-ratio: 4 / 5;
   }
+
   .plate-3 {
     grid-column: 4 / span 7;
     grid-row: 2;
@@ -359,6 +364,7 @@ a {
   .film-slot-1 {
     grid-column: 1 / span 9;
   }
+
   .film-slot-2 {
     grid-column: 4 / -1;
   }
