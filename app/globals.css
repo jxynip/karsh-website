@@ -29,10 +29,16 @@ html {
 }
 
 body {
-  min-height: 100svh;
-  background: var(--ink);
+ min-height: 100svh;
+  background: transparent;
   color: var(--text);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
 
 img {
   display: block;
@@ -60,10 +66,11 @@ a {
 
 /* ---------- Background ---------- */
 .backdrop {
-  position: fixed;
+ position: fixed;
   inset: 0;
-  z-index: -1;
-  background: var(--ink);;
+  z-index: 0;
+  background: transparent;
+  pointer-events: none;
 }
 
 .backdrop img {
