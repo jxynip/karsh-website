@@ -30,13 +30,8 @@ html {
 
 body {
   min-height: 100svh;
-  background: transparent;
+  background: var(--ink);
   color: var(--text);
-  font-family: var(--sans);
-  font-size: 1rem;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 img {
@@ -67,9 +62,8 @@ a {
 .backdrop {
   position: fixed;
   inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background: var(--ink);
+  z-index: -1;
+  background: var(--ink);;
 }
 
 .backdrop img {
@@ -85,10 +79,10 @@ a {
 
 /* ---------- Page frame ---------- */
 .page {
-  position: relative;
-  z-index: 1;
-  min-height: 100svh;
+   min-height: 100svh;
   display: flex;
+  flex-direction: column;
+  padding-inline: var(--gutter);
 }
 
 /* ---------- Header ---------- */
