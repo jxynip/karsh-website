@@ -3,7 +3,7 @@
   --ink: #000;
   --text: #ececea;
   --muted: #8f8f8b;
-  --overlay: rgba(0, 0, 0, 0.55); /* only overlay on the page: keeps text legible */
+  --overlay: rgba(0, 0, 0, 0.35); /* only overlay on the page: keeps text legible */
 
   --gutter: clamp(1.25rem, 4vw, 3.5rem);
   --space-m: clamp(3rem, 8vw, 7rem);
