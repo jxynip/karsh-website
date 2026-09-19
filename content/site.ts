@@ -77,7 +77,7 @@ export const site: Site = {
 
   socials: {
     instagram: "https://www.instagram.com/thisiskarsh",
-    X : "https://x.com/realkarsh",
+    twitter : "https://x.com/realkarsh",
     youtube: "https://www.youtube.com/channel/UCzudK-pViwmXgo6UpklnpPA",
     appleMusic: "https://music.apple.com/ca/artist/karsh/1731261159",
     spotify: "https://open.spotify.com/artist/3fidvDtvX2WuhSI8l29LQ1?si=iu5a-hdeSaG0oYCi-Muudw",
